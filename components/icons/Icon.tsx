@@ -1,7 +1,11 @@
-export const PeopleIcon = () => (
+export const PeopleIcon = ({
+  className = "text-primary",
+}: {
+  className: string;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 text-primary"
+    className={`h-6 w-6 ${className}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -15,10 +19,14 @@ export const PeopleIcon = () => (
   </svg>
 );
 
-export const TickIcon = () => (
+export const TickIcon = ({
+  className = "text-primary",
+}: {
+  className: string;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 text-primary"
+    className={`h-6 w-6 ${className}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -66,10 +74,14 @@ export const TGIcon = () => (
   </svg>
 );
 
-export const PasteIcon = () => (
+export const PasteIcon = ({
+  className = "text-primary",
+}: {
+  className: string;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 text-primary"
+    className={`h-6 w-6 ${className}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -191,10 +203,27 @@ export const PhoneIcon = () => (
   </svg>
 );
 
-export const PlusIcon = () => (
+export const PlusIcon = ({ className = "h-5 w-5" }: { className: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-5 w-5 mr-2 transform group-hover:scale-110 transition-transform duration-200"
+    className={`mr-2 transform group-hover:scale-110 transition-transform duration-200 ${className}`}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
+
+export const PlusIconDashboard = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6 text-red-500"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -344,6 +373,23 @@ export const DynamicDashboardIcon = ({ icon }: { icon: string }) => (
       strokeLinejoin="round"
       strokeWidth={2}
       d={icon}
+    />
+  </svg>
+);
+
+export const UserIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6 text-red-500"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
     />
   </svg>
 );
