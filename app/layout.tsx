@@ -1,5 +1,3 @@
-import Footer from "@/components/common/Footer";
-import Navbar from "@/components/common/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -25,9 +23,7 @@ export default function RootLayout({
         className={`${inter.variable} antialiased`}
         cz-shortcut-listen="true"
       >
-        <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

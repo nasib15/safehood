@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DownIcon, MapIcon, UpIcon } from "../icons/Icon";
+import { DownIcon, MapIcon, UpIcon } from "../../../components/icons/Icon";
 
 const CrimeCard = () => {
   return (

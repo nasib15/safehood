@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PlusIcon, RightArrowIcon } from "../icons/Icon";
+import { PlusIcon, RightArrowIcon } from "../../../components/icons/Icon";
 
 const Banner = () => {
   return (

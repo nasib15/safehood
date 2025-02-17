@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { PlusIcon, SearchIcon } from "../icons/Icon";
-import { Button } from "../ui/button";
+import { PlusIcon, SearchIcon } from "../../../components/icons/Icon";
+import { Button } from "../../../components/ui/button";
 import CrimeCard from "./CrimeCard";
 
 const CrimeFeed = () => {

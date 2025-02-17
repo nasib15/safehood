@@ -1,4 +1,4 @@
-import { SadIcon } from "../icons/Icon";
+import { SadIcon } from "../../../components/icons/Icon";
 
 const FallbackCrimeFeed = () => {
   return (
