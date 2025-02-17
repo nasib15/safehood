@@ -134,10 +134,10 @@ export const DangerIcon = () => (
   </svg>
 );
 
-export const MapIcon = () => (
+export const MapIcon = ({ className = "size-6" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 text-red-500"
+    className={`text-red-500 ${className}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -221,6 +221,74 @@ export const RightArrowIcon = () => (
       strokeLinejoin="round"
       strokeWidth={2}
       d="M17 8l4 4m0 0l-4 4m4-4H3"
+    />
+  </svg>
+);
+
+export const SadIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-16 w-16 text-gray-600 mb-4"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
+
+export const SearchIcon = () => (
+  <svg
+    className="absolute left-3 top-3.5 h-5 w-5 text-gray-500 group-focus-within:text-red-500 transition-colors duration-200"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+    />
+  </svg>
+);
+
+export const UpIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M5 15l7-7 7 7"
+    />
+  </svg>
+);
+
+export const DownIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M19 9l-7 7-7-7"
     />
   </svg>
 );
