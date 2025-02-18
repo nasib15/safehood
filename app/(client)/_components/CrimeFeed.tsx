@@ -18,8 +18,8 @@ const CrimeFeed = () => {
               </p>
             </div>
             <Link href="/dashboard/report">
-              <Button variant="destructive" size="lg" className="gap-2">
-                <PlusIcon />
+              <Button variant="destructive" size="sm" className="gap-1">
+                <PlusIcon className={"h-5 w-5"} />
                 Report Crime
               </Button>
             </Link>
@@ -34,7 +34,7 @@ const CrimeFeed = () => {
                     placeholder="Search reports..."
                     className="w-full px-4 py-2 pl-10 bg-background border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                   />
-                  <SearchIcon />
+                  <SearchIcon position="left-3.5 top-[11px]" />
                 </div>
               </div>
               <div className="flex gap-4">
