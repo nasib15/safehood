@@ -273,7 +273,7 @@ export const SadIcon = () => (
 
 export const SearchIcon = () => (
   <svg
-    className="absolute left-3 top-3.5 h-5 w-5 text-gray-500 group-focus-within:text-red-500 transition-colors duration-200"
+    className="absolute left-3 top-3.5 h-5 w-5 text-gray-400 group-focus-within:text-red-500 transition-colors duration-200"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -447,6 +447,23 @@ export const SmallTickIcon = () => (
       strokeLinejoin="round"
       strokeWidth={2}
       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
+
+export const TimerIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-4 w-4"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
     />
   </svg>
 );
