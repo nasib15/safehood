@@ -178,7 +178,7 @@ const DashboardOverview = () => {
         </Link>
 
         <Link
-          href="/dashboard/profile"
+          href="/dashboard/my-profile"
           className="group bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-200"
         >
           <div className="flex items-center gap-4">
