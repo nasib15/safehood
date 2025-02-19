@@ -53,8 +53,12 @@ function Header() {
           <p className="text-2xl font-semibold pl-4">SafeHood</p>
         </Link>
         <div className="flex justify-end w-full gap-4">
-          <Button variant="outline">Sign in</Button>
-          <Button>Register</Button>
+          <Link href="/login">
+            <Button variant="outline">Sign in</Button>
+          </Link>
+          <Link href="/register">
+            <Button>Register</Button>
+          </Link>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
