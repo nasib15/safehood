@@ -1,3 +1,4 @@
+import { signInWithGithub, signInWithGoogle } from "@/actions/signIn";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,31 +8,35 @@ const LoginForm = () => {
     <>
       {/* Social Login Buttons */}
       <div className="space-y-3">
-        <button className="w-full flex items-center justify-center gap-3 px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200">
-          <Image
-            src="/google.svg"
-            alt="Google"
-            width={20}
-            height={20}
-            className="w-5 h-5"
-          />
-          <span className="text-sm font-medium text-gray-700">
-            Continue with Google
-          </span>
-        </button>
+        <form action={signInWithGoogle}>
+          <button className="w-full flex items-center justify-center gap-3 px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200">
+            <Image
+              src="/google.svg"
+              alt="Google"
+              width={20}
+              height={20}
+              className="w-5 h-5"
+            />
+            <span className="text-sm font-medium text-gray-700">
+              Continue with Google
+            </span>
+          </button>
+        </form>
 
-        <button className="w-full flex items-center justify-center gap-3 px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200">
-          <Image
-            src="/github.svg"
-            alt="GitHub"
-            width={20}
-            height={20}
-            className="w-5 h-5"
-          />
-          <span className="text-sm font-medium text-gray-700">
-            Continue with GitHub
-          </span>
-        </button>
+        <form action={signInWithGithub}>
+          <button className="w-full flex items-center justify-center gap-3 px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200">
+            <Image
+              src="/github.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+              className="w-5 h-5"
+            />
+            <span className="text-sm font-medium text-gray-700">
+              Continue with GitHub
+            </span>
+          </button>
+        </form>
       </div>
 
       <div className="relative">
